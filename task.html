@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Atribuição de Tarefa</title>
+    <link
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="plan.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="text-center">
+        <img src="edit.png" class="icon-header" alt="Ícone" />Atribuição de
+        tarefa
+      </h1>
+      <div class="card custom-card">
+        <div class="card-header">
+          <h2>Digite aqui o título da tarefa:</h2>
+          <input type="text" class="form-control" />
+        </div>
+        <div class="card-body">
+          <div class="form-group">
+            <label
+              >Para qual bimestre você deseja atribuir essa atividade?</label
+            ><br />
+            <div class="form-check form-check-inline">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="bimestre"
+                value="1º"
+              />
+              <label class="form-check-label">1º</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="bimestre"
+                value="2º"
+              />
+              <label class="form-check-label">2º</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="bimestre"
+                value="3º"
+              />
+              <label class="form-check-label">3º</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="bimestre"
+                value="4º"
+              />
+              <label class="form-check-label">4º</label>
+            </div>
+          </div>
+          <div class="form-group">
+            <label>Digite aqui a descrição da tarefa:</label>
+            <textarea class="form-control" rows="4"></textarea>
+          </div>
+          <div class="form-group">
+            <label>Para qual data você deseja projetar essa tarefa?</label>
+            <input type="date" class="form-control" />
+          </div>
+        </div>
+        <div class="card-footer text-center">
+          <button class="btn custom-assign-btn btn-block" id="assignTask">
+            <img src="atribuir.png" class="icon" /> Atribuir
+          </button>
+        </div>
+      </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </body>
+</html>
