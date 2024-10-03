@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seleção de Semestre</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="Semestres.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-blue">
+        <div class="container-fluid">
+            <button class="btn btn-light" id="backButton">
+                <i class="bi bi-arrow-left"></i> <!-- Ícone da seta para voltar -->
+            </button>
+            <a class="navbar-brand text-light mx-auto" href="">Seleção de Semestre</a>
+        </div>
+    </nav>
+
+    <!-- Formulário de Seleção -->
+    <div class="container mt-5">
+        <div class="card shadow-lg p-4">
+            <form>
+                <div class="mb-3">
+                    <label for="semestre" class="form-label">Selecione o Semestre</label>
+                    <select class="form-select" id="semestre" required>
+                        <option selected disabled>Escolha...</option>
+                        <option value="1">1º Semestre</option>
+                        <option value="2">2º Semestre</option>
+                        <option value="3">3º Semestre</option>
+                        <option value="4">4º Semestre</option>
+                    </select>
+                </div>
+                <div class="mb-3">
+                    <label for="periodo" class="form-label">Selecione o Período</label>
+                    <select class="form-select" id="periodo" required>
+                        <option selected disabled>Escolha...</option>
+                        <option value="manha">Matutino</option>
+                        <option value="tarde">Vespertino</option>
+                        <option value="noite">Noturno</option>
+                    </select>
+                </div>
+                <div class="text-center">
+                    <button type="submit" class="btn btn-primary btn-lg">Confirmar</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        document.getElementById("backButton").onclick = function() {
+            window.location.href = 'index.html'; // Redireciona para a tela de turmas
+        };
+    </script>
+</body>
+</html>

@@ -19,6 +19,13 @@ body {
 .card-title {
   font-weight: bold;
   font-size: 24px;
+  color: #000000; /* Títulos em cor preta */
+}
+
+/* Estilo para o texto abaixo do título */
+.card p {
+  color: #000000; /* Texto abaixo do título também em preto */
+  font-size: 16px; /* Tamanho de fonte ajustado, se necessário */
 }
 
 /* Estilo para ícones */
@@ -41,7 +48,7 @@ body {
   background-color: #e0e0e0; /* Fundo cinza claro ao passar o mouse */
 }
 
-/* Opcional: Efeito hover para o botão 'Criar' */
+/* Efeito hover para o botão 'Criar' */
 .btn-create:hover {
   background-color: #e0e0e0; /* Pouco mais escuro ao passar o mouse */
 }
@@ -54,8 +61,9 @@ button.card {
   padding: 20px;
   border: none;
   outline: none;
-  background: none;
+  background: transparent; /* Transparente */
   font: inherit;
+  cursor: pointer;
 }
 
 /* Estilo para o título 'Turmas' */
@@ -63,3 +71,15 @@ button.card {
   color: #ffffff; /* Cor branca para o título */
 }
 
+/* Deixa o link do botão transparente */
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+button.card:hover {
+  background-color: transparent; /* Deixa o botão transparente no hover */
+}
